@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+	background-color: #898989;
+	margin:0;
+	padding:0;
+	font-size: 0.75em;
+	line-height: 1.2em;
+	color: #333;
+}
+
+img {
+	border:none;
+}
+
+@font-face { font-family:"seo";     
+           src:url("../images/segoeui.eot");             
+	       src:local("☺"), url("../images/segoeui.woff")  format("woff"), 
+             url("../images/segoeui.ttf") format("truetype");  
+}
+
+@font-face {font-family:"Nanum"; 
+             src:url("../images/nanum.eot"); 
+			 src:local("☺"), url("../images/nanum.woff")  format("woff"),
+			 url("../images/nanum.ttf") format("truetype"); 
+}
+
+#wrap {
+	width:971px;
+	text-align:left;
+	margin:0;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../images/shadow.png); 
+	background-repeat: repeat-y;
+	min-height:780px;
+	
+}
+
+header {
+	height:151px;
+	margin:0;
+	padding:0;	
+}
+.clear {
+	clear:both;
+}
+
+#logo {
+	float:left;
+	width:265px;
+	margin:40px 0 0 40px;
+	
+
+}
+
+
+#login {
+	float:right;
+	margin:20px 64px 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	word-spacing: 5px;
+	
+}
+
+#login a {
+	text-decoration:none;
+	color: #333;
+}
+
+#login a:hover {
+	color: #F90;	
+}
+
+nav#top_menu {
+	width:520px;
+	margin:50px 20px 0 0;	
+	float:right;
+	}
+	
+nav#top_menu ul {
+	list-style:none;
+	 font-family:Nanum; 
+	font-size: 16px;
+	font-weight:normal;
+	color: #333;	
+	
+}
+
+nav#top_menu ul li {
+	float:left;	
+	margin:0 5px;
+
+}
+
+nav#top_menu a {
+	display:block;
+	height:20px;
+	padding:10px;
+	text-decoration:none;
+	color: #333;
+	
+
+}
+
+nav#top_menu a:hover {
+	background-image: url(../images/blue.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+
+
+
+footer {
+	margin:50px 0 0 0;
+	height:80px;
+	background-image: url(../images/under_logo.gif);
+	background-repeat: no-repeat;
+	background-position: 40px center;
+}
+
+footer hr {
+	width:900px;
+	margin:0 0 0 15px; !important;
+	margin:0 0 0 35px; 
+}
+
+footer #copy {
+	font-family:seo;
+	width:450px;
+	margin:20px 0 0 190px;
+	float:left;	
+	
+}
+
+footer #social {
+	width:130px;
+	margin:20px 20px 0 0 ;
+	float:right;	
+}
+footer #social img {
+	margin:0 7px;
+
+}
+
+

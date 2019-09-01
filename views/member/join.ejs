@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <% include ../header %>
+</head>
+<% include ./sub_img%>
+<% include ./sub_menu%>
+
+<article>
+    
+<h1>회원가입</h1>
+<form action='/signUp' method='post'>
+<fieldset>
+<legend>공정한 투표를 위하여 가입절차를 진행해주세요. </legend>
+<label>이름</label> <input name="name" type="text" class="nick"><br>
+<label>번호</label> <input name="phone" type="num" class="num" ><br>
+<label>ID</label> <input name="id" type="text" class="id"> <input name="" type="button" value="중복확인" class="dup"><br>
+<label>Password</label> <input name="pw" type="password" class="pass"><br>
+<label>Password 확인</label> <input name="" type="password" class="pass"><br>
+
+</fieldset>
+
+<div class="clear"></div>
+<div id="buttons">
+<input name="" type="submit" value="가입하기" class="submit"> <input name="" type="button" value="취소하기" class="cancel">
+</div>
+
+</form> 
+    
+</article>    
+<% include ../footer %>

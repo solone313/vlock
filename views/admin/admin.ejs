@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+
+<% include ../header %>
+<% include ./sub_img %>
+
+<html>
+    <head>  </head>
+    <body>
+        <article>
+        <h1>[Admin]</h1>
+        <form action="/admin" method="post">
+            <p>후보자 이름<br/><input type="text" name = "name" placeholder="후보자 이름"></p>
+            <p>당 이름<br/><input type="text" name = "party" placeholder="당 이름"></p>
+            <p><input type="submit" value="등록"></p>
+            
+        </form>
+
+        <form action="/admin" method="post">
+            <p><input type="radio" name="value" value=0> 투표 시작</p>
+            <p><input type="radio" name="value" value=1> 투표 종료</p>
+            <p><input type="radio" name="value" value=2> 게시 종료</p>
+            <p><input type="submit" value="확인"></p>
+        </form>
+    </article>
+    </body>
+</html>
+
+<% include ../footer %>

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Remix - Solidity IDE에 링크
+Type=Link
+URL=https://remix.ethereum.org/#optimize=false&version=soljson-v0.4.25+commit.59dbf8f1.js
+Icon=text-html
+Name[ko]=Remix

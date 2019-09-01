@@ -1,0 +1,44 @@
+<% include ../header %>
+<% include ./sub_img_vote %>
+
+<html>
+    <body>
+        <article>
+    <div id="vote">
+    <h1 align="center">총학생회 선거</h1>
+    <br /><br />
+    <% var _list = JSON.stringify(object_arr)
+        _list = JSON.parse(_list)
+        %> 
+    <form action="/vote" method="post">
+    <table border="1" bordercolor="skyblue" width="500" height="60" align="left">
+            <td>선택</td>
+            <td>기호</td>
+            <td>이름</td>
+            <td>정당</td>
+            <% for(var i=0;i<_list.length;i++){%>
+            <tr  align ="center">
+                <td><input type="radio" name="idx" value= <%=i%>></td>
+                <td><%=_list[i]["idx"]+1%></td>
+                <td><%=_list[i]["name"]%></td>
+                <td><%=_list[i]["party"]%></td>
+            </tr>
+            <%}%>
+    </table>
+
+    <br /><br />
+    <br></br>
+    <br><br>
+    <input type="submit" value="투표">
+    <input type="reset" value="취소">
+</form>
+</div>
+
+ </article>
+ 
+ 
+ 
+     </body>
+</html>
+
+<% include ../footer %>
